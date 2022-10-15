@@ -1,0 +1,389 @@
+With 10 data: 
+Sorting altgorithm: HeapSort
+c++ script
+0.00596379990000000000
+Pyhton3 script
+0.01570801670000000000
+Sorting altgorithm: MergeSort
+c++ script
+0.00402181450000000000
+Pyhton3 script
+0.01720869230000000000
+Sorting altgorithm: QuickSort
+c++ script
+0.00423945400000000000
+Pyhton3 script
+0.01635619530000000000
+Sorting altgorithm: Introsort
+c++ script
+0.00404088900000000000
+Pyhton3 script
+0.01734243600000000000
+
+
+With 20 data: 
+Sorting altgorithm: HeapSort
+c++ script
+0.00365714120000000000
+Pyhton3 script
+0.01841362250000000000
+Sorting altgorithm: MergeSort
+c++ script
+0.00380459690000000000
+Pyhton3 script
+0.01740000910000000000
+Sorting altgorithm: QuickSort
+c++ script
+0.00418226270000000000
+Pyhton3 script
+0.01632261530000000000
+Sorting altgorithm: Introsort
+c++ script
+0.00392951080000000000
+Pyhton3 script
+0.01704774620000000000
+
+
+With 40 data: 
+Sorting altgorithm: HeapSort
+c++ script
+0.00425850380000000000
+Pyhton3 script
+0.01655854070000000000
+Sorting altgorithm: MergeSort
+c++ script
+0.00428617030000000000
+Pyhton3 script
+0.01811367070000000000
+Sorting altgorithm: QuickSort
+c++ script
+0.00397805180000000000
+Pyhton3 script
+0.01641756080000000000
+Sorting altgorithm: Introsort
+c++ script
+0.00445624130000000000
+Pyhton3 script
+0.01921564140000000000
+
+
+With 80 data: 
+Sorting altgorithm: HeapSort
+c++ script
+0.00385540180000000000
+Pyhton3 script
+0.01667737380000000000
+Sorting altgorithm: MergeSort
+c++ script
+0.00372980640000000000
+Pyhton3 script
+0.01861685910000000000
+Sorting altgorithm: QuickSort
+c++ script
+0.00403963110000000000
+Pyhton3 script
+0.01802317850000000000
+Sorting altgorithm: Introsort
+c++ script
+0.00441477220000000000
+Pyhton3 script
+0.01903389400000000000
+
+
+With 160 data: 
+Sorting altgorithm: HeapSort
+c++ script
+0.00380623520000000000
+Pyhton3 script
+0.01824444190000000000
+Sorting altgorithm: MergeSort
+c++ script
+0.00384676690000000000
+Pyhton3 script
+0.01804417180000000000
+Sorting altgorithm: QuickSort
+c++ script
+0.00412453250000000000
+Pyhton3 script
+0.01856084210000000000
+Sorting altgorithm: Introsort
+c++ script
+0.00385159610000000000
+Pyhton3 script
+0.01956416880000000000
+
+
+With 320 data: 
+Sorting altgorithm: HeapSort
+c++ script
+0.00415889400000000000
+Pyhton3 script
+0.01981838710000000000
+Sorting altgorithm: MergeSort
+c++ script
+0.00405430810000000000
+Pyhton3 script
+0.01937229040000000000
+Sorting altgorithm: QuickSort
+c++ script
+0.00388815850000000000
+Pyhton3 script
+0.01884109630000000000
+Sorting altgorithm: Introsort
+c++ script
+0.00384130430000000000
+Pyhton3 script
+0.01881068020000000000
+
+
+With 640 data: 
+Sorting altgorithm: HeapSort
+c++ script
+0.00421395240000000000
+Pyhton3 script
+0.01905052550000000000
+Sorting altgorithm: MergeSort
+c++ script
+0.00452790520000000000
+Pyhton3 script
+0.02011933290000000000
+Sorting altgorithm: QuickSort
+c++ script
+0.00386831170000000000
+Pyhton3 script
+0.01866260230000000000
+Sorting altgorithm: Introsort
+c++ script
+0.00387122410000000000
+Pyhton3 script
+0.01778829950000000000
+
+
+With 1280 data: 
+Sorting altgorithm: HeapSort
+c++ script
+0.00422159550000000000
+Pyhton3 script
+0.02149981620000000000
+Sorting altgorithm: MergeSort
+c++ script
+0.00493749600000000000
+Pyhton3 script
+0.02013792270000000000
+Sorting altgorithm: QuickSort
+c++ script
+0.00416294840000000000
+Pyhton3 script
+0.01937987770000000000
+Sorting altgorithm: Introsort
+c++ script
+0.00413614470000000000
+Pyhton3 script
+0.01871566940000000000
+
+
+With 2560 data: 
+Sorting altgorithm: HeapSort
+c++ script
+0.00512868540000000000
+Pyhton3 script
+0.02639368290000000000
+Sorting altgorithm: MergeSort
+c++ script
+0.00509540860000000000
+Pyhton3 script
+0.02511962210000000000
+Sorting altgorithm: QuickSort
+c++ script
+0.00504776830000000000
+Pyhton3 script
+0.02103281370000000000
+Sorting altgorithm: Introsort
+c++ script
+0.00472285610000000000
+Pyhton3 script
+0.02041436150000000000
+
+
+With 5120 data: 
+Sorting altgorithm: HeapSort
+c++ script
+0.00671640430000000000
+Pyhton3 script
+0.03723266590000000000
+Sorting altgorithm: MergeSort
+c++ script
+0.00579407750000000000
+Pyhton3 script
+0.03374432920000000000
+Sorting altgorithm: QuickSort
+c++ script
+0.00568244420000000000
+Pyhton3 script
+0.02475522410000000000
+Sorting altgorithm: Introsort
+c++ script
+0.00574398890000000000
+Pyhton3 script
+0.02508866870000000000
+
+
+With 10240 data: 
+Sorting altgorithm: HeapSort
+c++ script
+0.00897552660000000000
+Pyhton3 script
+0.05912949240000000000
+Sorting altgorithm: MergeSort
+c++ script
+0.00767244160000000000
+Pyhton3 script
+0.05213550250000000000
+Sorting altgorithm: QuickSort
+c++ script
+0.00829655020000000000
+Pyhton3 script
+0.03422067030000000000
+Sorting altgorithm: Introsort
+c++ script
+0.00771275070000000000
+Pyhton3 script
+0.03433512440000000000
+
+
+With 20480 data: 
+Sorting altgorithm: HeapSort
+c++ script
+0.01396640100000000000
+Pyhton3 script
+0.10544160230000000000
+Sorting altgorithm: MergeSort
+c++ script
+0.01187689470000000000
+Pyhton3 script
+0.09346558290000000000
+Sorting altgorithm: QuickSort
+c++ script
+0.01142370140000000000
+Pyhton3 script
+0.05615034400000000000
+Sorting altgorithm: Introsort
+c++ script
+0.01109004360000000000
+Pyhton3 script
+0.05263616880000000000
+
+
+With 40960 data: 
+Sorting altgorithm: HeapSort
+c++ script
+0.02375109350000000000
+Pyhton3 script
+0.21025366930000000000
+Sorting altgorithm: MergeSort
+c++ script
+0.01845957870000000000
+Pyhton3 script
+0.17689375470000000000
+Sorting altgorithm: QuickSort
+c++ script
+0.01830242530000000000
+Pyhton3 script
+0.09231674090000000000
+Sorting altgorithm: Introsort
+c++ script
+0.01924865750000000000
+Pyhton3 script
+0.09349757930000000000
+
+
+With 81920 data: 
+Sorting altgorithm: HeapSort
+c++ script
+0.04349994000000000000
+Pyhton3 script
+0.43980883940000000000
+Sorting altgorithm: MergeSort
+c++ script
+0.03195516160000000000
+Pyhton3 script
+0.44878634680000000000
+Sorting altgorithm: QuickSort
+c++ script
+0.03406682620000000000
+Pyhton3 script
+0.21683333890000000000
+Sorting altgorithm: Introsort
+c++ script
+0.03428784290000000000
+Pyhton3 script
+0.17692258630000000000
+
+
+With 163840 data: 
+Sorting altgorithm: HeapSort
+c++ script
+0.08739178210000000000
+Pyhton3 script
+0.94436943630000000000
+Sorting altgorithm: MergeSort
+c++ script
+0.06165026180000000000
+Pyhton3 script
+0.75815780230000000000
+Sorting altgorithm: QuickSort
+c++ script
+0.05848898100000000000
+Pyhton3 script
+0.37918775310000000000
+Sorting altgorithm: Introsort
+c++ script
+0.06265197090000000000
+Pyhton3 script
+0.37533288900000000000
+
+
+With 327680 data: 
+Sorting altgorithm: HeapSort
+c++ script
+0.18770081860000000000
+Pyhton3 script
+02.03946474560000000000
+Sorting altgorithm: MergeSort
+c++ script
+0.12003811400000000000
+Pyhton3 script
+01.56742335570000000000
+Sorting altgorithm: QuickSort
+c++ script
+0.11464434330000000000
+Pyhton3 script
+0.76868184150000000000
+Sorting altgorithm: Introsort
+c++ script
+0.12534044850000000000
+Pyhton3 script
+0.76043072040000000000
+
+
+With 655360 data: 
+Sorting altgorithm: HeapSort
+c++ script
+0.37990613930000000000
+Pyhton3 script
+04.72795486300000000000
+Sorting altgorithm: MergeSort
+c++ script
+0.23870053280000000000
+Pyhton3 script
+03.34977258640000000000
+Sorting altgorithm: QuickSort
+c++ script
+0.22962771010000000000
+Pyhton3 script
+01.71088606270000000000
+Sorting altgorithm: Introsort
+c++ script
+0.25373515870000000000
+Pyhton3 script
+01.59443875080000000000

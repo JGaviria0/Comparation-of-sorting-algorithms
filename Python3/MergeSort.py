@@ -1,9 +1,16 @@
 import sys
+import os
+import psutil
 # Python program for implementation of MergeSort
  
 # Merges two subarrays of arr[].
 # First subarray is arr[l..m]
 # Second subarray is arr[m+1..r]
+
+def process_memory():
+	process = psutil.Process(os.getpid())
+	mem_info = process.memory_info()
+	return mem_info.rss
  
  
 def merge(arr, l, m, r):

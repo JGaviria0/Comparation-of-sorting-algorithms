@@ -1,6 +1,10 @@
 #include <iostream>
 using namespace std;
 
+long long comparation = 0; 
+long long swaps = 0; 
+long long iteration = 0;
+
 void heapify(int arr[], int N, int i)
 {
 
@@ -13,16 +17,22 @@ void heapify(int arr[], int N, int i)
 	int r = 2 * i + 2;
 
 	// If left child is larger than root
-	if (l < N && arr[l] > arr[largest])
+	if (l < N && arr[l] > arr[largest]){
 		largest = l;
+		comparation++;
+	}
 
 	// If right child is larger than largest
 	// so far
-	if (r < N && arr[r] > arr[largest])
+	if (r < N && arr[r] > arr[largest]){
 		largest = r;
+		comparation++;
+	}
 
 	// If largest is not root
 	if (largest != i) {
+		comparation++;
+		swaps++;
 		swap(arr[i], arr[largest]);
 
 		// Recursively heapify the affected
@@ -45,6 +55,7 @@ void heapSort(int arr[], int N)
 
 		// Move current root to end
 		swap(arr[0], arr[i]);
+		swaps++;
 
 		// call max heapify on the reduced heap
 		heapify(arr, i, 0);
@@ -63,5 +74,8 @@ int main () {
     }
 
     heapSort( a, n);
+
+	cout << comparation << ";" << swaps << ";";
+
 
 }

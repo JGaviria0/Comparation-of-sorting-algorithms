@@ -1,7 +1,14 @@
 import sys
+import os
+import psutil
 
 # Python3 program to perform basic timSort
 MIN_MERGE = 32
+
+def process_memory():
+	process = psutil.Process(os.getpid())
+	mem_info = process.memory_info()
+	return mem_info.rss
 
 
 def calcMinRun(n):

@@ -1,4 +1,12 @@
 import sys
+import os
+import psutil
+from concurrent.futures import process
+
+def process_memory():
+	process = psutil.Process(os.getpid())
+	mem_info = process.memory_info()
+	return mem_info.data
 
 def heapify(arr, N, i):
 	largest = i # Initialize largest as root
@@ -37,12 +45,27 @@ def heapSort(arr):
 		arr[i], arr[0] = arr[0], arr[i] # swap
 		heapify(arr, i, 0)
 
+    
+
+def profile(func):
+	def wrapper(*args, **kwargs):
+
+		mem_before = process_memory()
+		result = func(*args, **kwargs)
+		mem_after = process_memory()
+		print("consumed memory: {:,}".format(
+			mem_before, mem_after, mem_after - mem_before))
+
+		return result
+	return wrapper
 
 
-def main():
-    n = int(input())
-    arr = list(map(int, sys.stdin.readline().strip().split()))
+@profile
 
-    heapSort(arr)
 
-main()
+def func():
+	n = int(input())
+	arr = list(map(int, sys.stdin.readline().strip().split()))
+	heapSort(arr)
+
+func()

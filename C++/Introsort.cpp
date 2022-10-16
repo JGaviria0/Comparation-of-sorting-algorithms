@@ -1,8 +1,13 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+long long comparation = 0; 
+long long swaps = 0; 
+long long iteration = 0;
+
 void swapValue(int* a, int* b)
-{
+{	
+	swaps++; 
 	int* temp = a;
 	a = b;
 	b = temp;
@@ -23,6 +28,7 @@ void InsertionSort(int arr[], int* begin, int* end)
 			j = j - 1;
 		}
 		arr[j + 1] = key;
+		swaps++;
 	}
 
 	return;
@@ -36,6 +42,7 @@ int* Partition(int arr[], int low, int high)
 	for (int j = low; j <= high - 1; j++) {
 		if (arr[j] <= pivot) {
 			i++;
+			comparation++;
 
 			swap(arr[i], arr[j]);
 		}
@@ -46,6 +53,7 @@ int* Partition(int arr[], int low, int high)
 
 int* MedianOfThree(int* a, int* b, int* c)
 {
+	comparation++;
 	if (*a < *b && *b < *c)
 		return (b);
 
@@ -72,11 +80,13 @@ void IntrosortUtil(int arr[], int* begin, int* end, int depthLimit)
 	int size = end - begin;
 
 	if (size < 16) {
+		comparation++;
 		InsertionSort(arr, begin, end);
 		return;
 	}
 
 	if (depthLimit == 0) {
+		comparation++;
 		make_heap(begin, end + 1);
 		sort_heap(begin, end + 1);
 		return;
@@ -115,4 +125,7 @@ int main () {
     }
 
 	Introsort(a, a, a + n - 1);
+
+	cout << comparation << ";" << swaps << ";";
+ 
 }

@@ -6,6 +6,10 @@ using namespace std;
 #define MAXS 10000000
 #define inf 2147483647
 
+long long comparation = 0; 
+long long swaps = 0; 
+long long iteration = 0;
+
 void Merge(int A[], int p, int q, int r)
 {
 	int i, j, k , n1 = (q - p + 1), n2 = (r - q);
@@ -34,6 +38,8 @@ void Merge(int A[], int p, int q, int r)
 		   A[k] = R[j];
 			j++;
 		}
+		comparation++; 
+		swaps++;
 	}  
 }
 
@@ -41,7 +47,8 @@ void MergeSort(int A[], int p, int r)
 {
 	int q;
 	if(p<r)
-	{
+	{	
+		comparation++; 
 		q = (p+r)>>1;
 		MergeSort(A,p,q);
 		MergeSort(A,q+1,r);
@@ -62,5 +69,8 @@ int main () {
     }
 
     MergeSort( a, 0, n-1);
+
+	cout << comparation << ";" << swaps << ";";
+	 
 
 }

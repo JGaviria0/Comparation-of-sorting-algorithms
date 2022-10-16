@@ -3,6 +3,10 @@
 
 using namespace std;
 
+long long comparation = 0; 
+long long swaps = 0; 
+long long iteration = 0;
+
 struct Node
 {
 	int key;
@@ -24,6 +28,7 @@ void storeSorted(Node *root, int arr[], int &i)
 {
 	if (root != NULL)
 	{
+		comparation++;
 		storeSorted(root->left, arr, i);
 		arr[i++] = root->key;
 		storeSorted(root->right, arr, i);
@@ -35,13 +40,23 @@ Node with given key in BST */
 Node* insert(Node* node, int key)
 {
 	/* If the tree is empty, return a new Node */
-	if (node == NULL) return newNode(key);
+	if (node == NULL) {
+		comparation;
+		return newNode(key);
+	} 
 
 	/* Otherwise, recur down the tree */
-	if (key < node->key)
+	if (key < node->key){
 		node->left = insert(node->left, key);
-	else if (key > node->key)
+		comparation++;
+		swaps++;
+	}
+	else if (key > node->key){
+		comparation++;
 		node->right = insert(node->right, key);
+		swaps++;
+
+	}
 
 	/* return the (unchanged) Node pointer */
 	return node;
@@ -54,8 +69,10 @@ void treeSort(int arr[], int n)
 
 	// Construct the BST
 	root = insert(root, arr[0]);
-	for (int i=1; i<n; i++)
+	for (int i=1; i<n; i++){
 		root = insert(root, arr[i]);
+		swaps++;
+	}
 
 	// Store inorder traversal of the BST
 	// in arr[]
@@ -75,4 +92,7 @@ int main () {
     }
 
     treeSort( a, n);
+
+	cout << comparation << ";" << swaps << ";";
+	
 }

@@ -3,6 +3,10 @@
 using namespace std;
 const int RUN = 32;
 
+long long comparation = 0; 
+long long swaps = 0; 
+long long iteration = 0;
+
 void insertionSort(int arr[], int left, int right)
 {
 	for (int i = left + 1; i <= right; i++)
@@ -11,6 +15,7 @@ void insertionSort(int arr[], int left, int right)
 		int j = i - 1;
 		while (j >= left && arr[j] > temp)
 		{
+			swaps++;
 			arr[j+1] = arr[j];
 			j--;
 		}
@@ -50,6 +55,7 @@ void merge(int arr[], int l, int m, int r)
 			arr[k] = right[j];
 			j++;
 		}
+		comparation++;
 		k++;
 	}
 
@@ -109,8 +115,10 @@ void timSort(int arr[], int n)
 
 			// merge sub array arr[left.....mid] &
 			// arr[mid+1....right]
-			if(mid < right)
+			if(mid < right){
+				comparation++;
 				merge(arr, left, mid, right);
+			}
 		}
 	}
 }
@@ -127,5 +135,7 @@ int main () {
     }
 
     timSort( a, n);
+
+	cout << comparation << ";" << swaps << ";";
 
 }
